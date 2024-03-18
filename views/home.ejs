@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ElevateBuild | Elevate Real Estate Experiences</title>
+
+    <!-- <link rel="icon" href="https://em-content.zobj.net/thumbs/120/toss-face/342/mountain_26f0-fe0f.png"> -->
+    <link rel="stylesheet" href="css/styles.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous"/>
+        <!-- Using CDN -->
+        <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../css/navbar.css">
+</head>
+<style>
+
+    
+</style>
+
+<body >
+    <section class="header">
+
+         <nav class="navbar navbar-expand-lg bg-yellow sticky-top navbar-light p-3 shadow-sm " >
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" style="height: 53px;width: 225px;" srcset=""> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+       
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/home/about">About</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/login">logout</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ">
+      
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i> <%= user.username %></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+        <div class="contain">
+            <h1><b style="color: rgb(255, 128, 0);">ElevateBuild.</b> Your Gateway to building a New Home.</h1>
+            <br><br><br><br><br>
+            <p class="header-para">Get exclusive access to members only deals on amazing deals on properties</p>
+       
+
+        </div>
+    </section>
+    <h2 class="section2">Popular Cities</h2>
+
+    <div class="photo">
+        <form class="box" action="/home/Delhi" method="get">
+            <div class="img1 images" >
+                <button style="border: none; background-color: rgb(255, 255, 255);" >
+                  <img src="img/delhi.jpg" alt="" style="margin-top: 8px;height: 300px; width: 450px;">
+                
+                <h2 class="card-title" style="margin-bottom : 10px;">Delhi</h2>
+                </button>
+            </div>
+        </form>
+  <form class="box" action="/home/Mumbai" method="get">
+            <div class="img1 images" >
+                <button style="border: none; background-color: rgb(255, 255, 255);" >
+                <img src="img/mumbai.jpg" alt="" style="margin-top: 8px;height: 300px; width: 450px;">
+                
+                <h2 class="card-title" style="margin-bottom: 10px;">Mumbai</h2>
+                </button>
+            </div>
+        </form>
+  <form class="box" action="/home/Bengaluru" method="get">
+            <div class="img1 images" >
+                <button style="border: none; background-color: rgb(255, 255, 255);" >
+                 <img src="img/bangalore.jpg" alt="" style="margin-top: 8px;height: 300px; width: 450px;">
+                
+                <h2 class="card-title" style="margin-bottom: 10px;">Bengaluru</h2>
+                </button>
+            </div>
+        </form>
+  <form class="box" action="/home/Chennai" method="get">
+            <div class="img1 images" >
+                <button style="border: none; background-color: rgb(255, 255, 255);" >
+                  <img src="img/chennai.jpg" alt="" style="margin-top: 8px;height: 300px; width: 450px;">
+                
+                <h2 class="card-title" style="margin-bottom: 10px;">Chennai</h2>
+                </button>
+            </div>
+        </form>
+
+    </div>
+    <section class="section3">
+        <h1 class="section4-title">What do we do?</h1>
+        <p class="p1">
+            We Provide services on Real Estate, House Building and many more.
+        </p>
+    </section>
+    <footer class="footer">
+        <div class="container1">
+            <div class="row1">
+                <div class="footer-col1">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our services</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href="">affliliate programe</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col1">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col1">
+                    <h4>follow us</h4>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook fa-1x"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-1x"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube fa-1x"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter fa-1x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    </body>
+</div>
+
+</html>

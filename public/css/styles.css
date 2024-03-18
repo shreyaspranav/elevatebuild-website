@@ -15,7 +15,8 @@
 } */
 
 .header {
-    background-image: url(/images/banner-img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(../img/banner-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -131,7 +132,7 @@
     margin-top: 5%;
 
     height: 500px;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6)), url(/images/banner-2.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6)), url(../img/banner-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
@@ -201,7 +202,7 @@ strike {
 .footer{
     margin-top: 0%;
 
-    background-image: linear-gradient(rgb(0, 0, 0, 1.0), rgb(0, 0, 0, 0.0)), url(/images/banner-footer.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 1.0), rgb(0, 0, 0, 0.0)), url(../img/banner-footer.jpg);
     background-size: cover;
     padding: 50px 0px;
     box-sizing: border-box;
@@ -240,3 +241,5 @@ strike {
     margin-left: 5px;
     text-decoration: underline;
 }
+
+

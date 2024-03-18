@@ -1,0 +1,55 @@
+
+
+
+/* cards */
+.card-cell{
+    display: flex;
+}
+.card {
+    border:none !important;
+    margin-bottom: 2rem;
+    background-color: rgb(220, 220, 220);
+    height: 20rem !important;
+    margin:auto;
+    margin-top:4% ;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-img-top {
+    border-radius: 1rem !important ;
+    width: 100% !important;
+    object-fit: cover !important;
+    width:15rem;
+}
+.card-body {
+    padding:0 !important;
+}
+.card-text  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-link {
+    text-decoration:inherit;
+    color:inherit;
+    
+ 
+
+}
+/* card-effect */
+
+.card-img-overlay {
+     opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;;
+}
+ 
+body{
+    margin: auto;
+}
+
+

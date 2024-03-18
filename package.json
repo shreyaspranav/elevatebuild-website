@@ -1,0 +1,28 @@
+{
+  "name": "shreyas",
+  "version": "1.0.0",
+  "description": "Assignment Project to develop a webpage using html and css",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.9",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.5.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "routes": "^2.1.0",
+    "validator": "^13.7.0"
+  }
+}

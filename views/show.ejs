@@ -1,0 +1,125 @@
+
+  
+   <head>
+     <link rel="stylesheet" href="css/show.css">
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous"/>
+        <!-- Using CDN -->
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<style>
+
+    .show-window{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.img-det{
+  display: flex;
+  justify-content: space-evenly;
+}
+.det-body{
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    padding: .6rem 0;
+    border-radius: .5rem;
+    border: none;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    outline: none;
+}
+    nav a{
+        color:white !important;
+    }
+    nav{
+    
+    z-index: 1;
+    opacity: 1;
+    background-color: rgb(1, 73, 102);
+    }
+
+
+</style>
+<link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+      <nav class="navbar navbar-expand-lg   sticky-top navbar-light p-3 shadow-sm " >
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="" style="height: 53px;width: 225px;" srcset=""> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/home/about">About</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="/login">logout</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i> Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i> <%= user.username %></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="show-window"><br><br>
+    <h3 style="text-align: center;">Property Details :</h3><br><br>
+
+    <div class="img-det">
+      <div>
+
+        <img class="prop-img" style="  height: 500px;  width: 800px;" src=<%=prop.image%> alt=""><br><br>
+        <p style="text-align: center; font-size: 1.5em;">plot-view</p>
+      </div>
+      <div class="det-body">
+
+        <p><b>Plot :</b><%= prop.title %></p>
+        <p><b>Adress :</b> <%=  prop.address %></p>
+        <p><b>City : </b><%= prop.city%></p>
+        <p><b>Plot-size : </b><%= prop.size %></p>
+        <p><b>Facing :</b> <%= prop.facing%></p>
+        <p><b>Katha : </b><%= prop.katha %></p><br><br>
+        <form method="POST" action="/home/card/<%=prop._id%>">
+          <button > Get a quote</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
